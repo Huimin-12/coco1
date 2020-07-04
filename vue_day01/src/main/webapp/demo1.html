@@ -9,6 +9,9 @@
 		<div id="app">
 			{{eleme}}
 		</div>
+		<div id="add">
+		    {{org}}
+		</div>
 	</body>
 	<script>
 		//view model
@@ -16,5 +19,9 @@
 			el:"#app",
 			data:{eleme: "hello vue"}
 		});
+                new Vue({
+			el:"#add"
+			data:{org:23}
+		})
 	</script>
 </html>
